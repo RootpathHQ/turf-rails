@@ -55,6 +55,11 @@ group :development, :test do
   gem 'bullet'
 end
 
+group :test do
+  gem 'simplecov', require: false
+  # gem 'codeclimate-test-reporter', '~> 1.0.0'
+end
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'

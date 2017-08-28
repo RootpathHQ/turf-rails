@@ -26,3 +26,4 @@
 .tags1
 
 .env
+/coverage/*
