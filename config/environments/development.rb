@@ -52,6 +52,9 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
+  # Devise Action Mailer options
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
   # Bullet Gem Configuration
   # See https://github.com/flyerhzm/bullet
   config.after_initialize do
