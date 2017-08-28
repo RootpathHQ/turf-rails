@@ -46,7 +46,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'awesome_print'
   gem 'pry'
-  gem 'pry-doc'
+  gem 'pry-doc', '~>0.11'
   gem 'pry-rails'
   gem 'factory_girl_rails'
   gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
