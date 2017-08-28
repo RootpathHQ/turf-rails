@@ -30,6 +30,9 @@ gem 'paperclip'
 # Prrformance
 gem 'bootsnap', require: false
 
+# Logging
+gem 'lograge'
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'awesome_print'
