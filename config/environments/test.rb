@@ -40,6 +40,9 @@ Rails.application.configure do
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
+  # Devise Action Mailer options
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
   # Bullet Gem Configuration
   # See https://github.com/flyerhzm/bullet
   config.after_initialize do

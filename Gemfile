@@ -16,6 +16,7 @@ gem 'rails', '~> 5.1.2'
 # ActiveRecord and ActiveModel
 gem 'bcrypt', '~> 3.1.7' # Use ActiveModel has_secure_password
 gem 'strip_attributes' #See https://github.com/rmm5t/strip_attributes
+gem 'devise' #Authentication
 
 # Servers
 gem 'puma', '~> 3.7'
