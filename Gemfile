@@ -5,27 +5,31 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# Rails
 gem 'rails', '~> 5.1.2'
-gem 'sqlite3'
+
+# ActiveRecord and ActiveModel
+gem 'bcrypt', '~> 3.1.7' # Use ActiveModel has_secure_password
+gem 'strip_attributes' #See https://github.com/rmm5t/strip_attributes
+
+# Servers
 gem 'puma', '~> 3.7'
+
+# Databases
+gem 'sqlite3'
+gem 'pg'
+
+# JavaScript and SCSS
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
+gem 'turbolinks', '~> 5'
 # gem 'therubyracer', platforms: :ruby
 
-gem 'coffee-rails', '~> 4.2'
-gem 'turbolinks', '~> 5'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.5'
-# Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 3.0'
-# Use ActiveModel has_secure_password
-gem 'bcrypt', '~> 3.1.7'
+# API
+gem 'jbuilder', '~> 2.5' # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 
 # Simple forms
 gem 'simple_form'
-
-# Attachments
-gem 'paperclip'
 
 # Prrformance
 gem 'bootsnap', require: false
@@ -52,6 +56,13 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'meta_request' # Supporting gem for RailsPanel chrome extension.
+  gem 'better_errors' # Better Rails error pages
+  gem 'binding_of_caller' # Required by better errors.
+end
+
+group :production do
+  gem 'heroku-deflater'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
