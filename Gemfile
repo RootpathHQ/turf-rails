@@ -7,6 +7,9 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# Environment variables
+gem 'dotenv-rails', require: 'dotenv/rails-now', groups: [:development, :test]
+
 # Rails
 gem 'rails', '~> 5.1.2'
 
