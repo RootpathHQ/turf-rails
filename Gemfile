@@ -35,7 +35,8 @@ gem 'simple_form'
 gem 'bootsnap', require: false
 
 # Logging
-gem 'lograge'
+gem 'lograge' # One-line logs
+gem 'shog' # Colourful logs
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -44,6 +45,7 @@ group :development, :test do
   gem 'pry-doc'
   gem 'pry-rails'
   gem 'factory_girl_rails'
+  gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
   gem 'rspec-rails'
   gem 'capybara'
   gem 'bullet'
