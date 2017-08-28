@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.4.1'
+
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
@@ -16,7 +18,6 @@ gem 'strip_attributes' #See https://github.com/rmm5t/strip_attributes
 gem 'puma', '~> 3.7'
 
 # Databases
-gem 'sqlite3'
 gem 'pg'
 
 # JavaScript and SCSS
