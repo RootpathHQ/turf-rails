@@ -50,7 +50,7 @@ gem 'pry-doc', '~>0.11'
 gem 'pry-rails'
 
 # Soft Deletion
-gem 'paranoia'
+gem 'paranoia', '~> 2.2'
 
 group :development, :test do
 

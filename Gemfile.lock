@@ -385,7 +385,7 @@ DEPENDENCIES
   lograge
   mdl
   meta_request
-  paranoia
+  paranoia (~> 2.2)
   pg
   pry
   pry-doc (~> 0.11)
