@@ -15,6 +15,8 @@ The product backlog is [here](https://trello.com/b/uog3kqhl/turf-app-task-board)
 
 ### Running the Tests
 
+Aim to write [good, full tests](https://robots.thoughtbot.com/how-we-test-rails-applications).
+
 ### Code Quality
 
 There are a number of code quality tools available in the repo. The following commands are available:
