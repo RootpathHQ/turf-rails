@@ -15,4 +15,20 @@ The product backlog is [here](https://trello.com/b/uog3kqhl/turf-app-task-board)
 
 ### Running the tests
 
+### Code Quality
+
+There are a number of code quality tools available in the repo. The following commands are available:
+
+```shell
+rubocop # Scan for ruby styleguide violations
+bundler-audit # Scan for outdated dependencies
+reek # Scan for code smells
+brakeman # Scan for security vulnerabilities
+sandi_meter -d # Print a report showing adherance to Sandy Metz' rules
+bin/analyze # Run various of the above scripts. See the source for details.
+
+rubycritic # Open a browser window showing code quality metrics
+rubrowser # Run a server showing the app's node graph
+```
+
 ### Deployment instructions
