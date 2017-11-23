@@ -6,11 +6,11 @@
 # the maximum value specified for Puma. Default is set to 5 threads for minimum
 # and maximum; this matches the default thread size of Active Record.
 #
-threads_count = ENV.fetch("RAILS_MAX_THREADS") { 5 }
+threads_count = ENV.fetch('RAILS_MAX_THREADS') { 5 }
 threads threads_count, threads_count
 
-port        ENV.fetch("PORT") { 3000 }
-environment ENV.fetch("RAILS_ENV") { "development" }
+port        ENV.fetch('PORT') { 3000 }
+environment ENV.fetch('RAILS_ENV') { 'development' }
 
 # Prevent pry timing out by setting PUMA_REQUEST_TIMEOUT=3600 (1 hour)
 puma_request_timeout = ENV['PUMA_REQUEST_TIMEOUT']
