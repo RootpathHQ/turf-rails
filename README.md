@@ -11,9 +11,9 @@ The product backlog is [here](https://trello.com/b/uog3kqhl/turf-app-task-board)
 
 ### Installation and Configuration
 
-### Database initialization
+### Database Initialization
 
-### Running the tests
+### Running the Tests
 
 ### Code Quality
 
