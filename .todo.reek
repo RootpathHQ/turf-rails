@@ -1,0 +1,24 @@
+---
+IrresponsibleModule:
+  exclude:
+  - ApplicationCable::Channel
+  - ApplicationCable::Connection
+  - ApplicationController
+  - WelcomeController
+  - ApplicationHelper
+  - ApplicationJob
+  - ApplicationMailer
+  - ApplicationRecord
+  - User
+  - TurfRails::Application
+  - DeviseCreateUsers
+FeatureEnvy:
+  exclude:
+  - DeviseCreateUsers#change
+TooManyStatements:
+  exclude:
+  - initialize
+  - DeviseCreateUsers#change
+UncommunicativeVariableName:
+  exclude:
+  - DeviseCreateUsers#change
