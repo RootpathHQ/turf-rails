@@ -49,6 +49,9 @@ gem 'pry'
 gem 'pry-doc', '~>0.11'
 gem 'pry-rails'
 
+# Soft Deletion
+gem 'paranoia'
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'factory_girl_rails'
