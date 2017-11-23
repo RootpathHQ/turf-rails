@@ -53,12 +53,23 @@ gem 'pry-rails'
 gem 'paranoia'
 
 group :development, :test do
+
+  # Testing
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'factory_girl_rails'
   gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
   gem 'rspec-rails'
   gem 'capybara'
+
+  # Dynamic Analysis
   gem 'bullet' # N+1 queries
+
+  # Static analysis
+  gem 'brakeman',      require: false
+  gem 'bundler-audit', require: false
+  gem 'mdl',           require: false
+  gem 'reek',          require: false
+  gem 'rubocop',       require: false
 end
 
 group :test do
