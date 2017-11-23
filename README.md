@@ -20,15 +20,23 @@ The product backlog is [here](https://trello.com/b/uog3kqhl/turf-app-task-board)
 There are a number of code quality tools available in the repo. The following commands are available:
 
 ```shell
-rubocop # Scan for ruby styleguide violations
-bundler-audit # Scan for outdated dependencies
-reek # Scan for code smells
-brakeman # Scan for security vulnerabilities
-sandi_meter -d # Print a report showing adherance to Sandy Metz' rules
-bin/analyze # Run various of the above scripts. See the source for details.
+rubocop              # Scan for ruby styleguide violations
+bundler-audit        # Scan for outdated dependencies
+reek                 # Scan for code smells
+brakeman             # Scan for security vulnerabilities
+sandi_meter -d       # Print a report showing adherance to Sandy Metz' rules
+bin/analyze          # Run various of the above scripts. See the source for details.
+rails_best_practices # Check for adherance to rails best practaces
 
-rubycritic # Open a browser window showing code quality metrics
-rubrowser # Run a server showing the app's node graph
+rubycritic           # Open a browser window showing code quality metrics
+rubrowser            # Run a server showing the app's node graph
+```
+
+# Useful Rake Tasks
+
+```ruby
+rake notes      # See TODO comments
+rake traceroute # Search for unused routes and unreachable actions
 ```
 
 ### Deployment instructions

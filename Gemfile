@@ -65,17 +65,19 @@ group :development, :test do
   gem 'bullet' # N+1 queries
 
   # Static analysis
-  gem 'brakeman',      require: false
-  gem 'bundler-audit', require: false
-  gem 'mdl',           require: false
-  gem 'reek',          require: false
-  gem 'rubocop',       require: false
-  gem 'rubocop-rspec', require: false
-  gem 'sandi_meter',   require: false
+  gem 'brakeman',             require: false
+  gem 'bundler-audit',        require: false
+  gem 'mdl',                  require: false
+  gem 'rails_best_practices', require: false
+  gem 'reek',                 require: false
+  gem 'rubocop',              require: false
+  gem 'rubocop-rspec',        require: false
+  gem 'sandi_meter',          require: false
+  gem 'traceroute'
 
   # Static Analysis GUIs
-  gem 'rubycritic',    require: false
-  gem 'rubrowser',     require: false
+  gem 'rubrowser',            require: false
+  gem 'rubycritic',           require: false
 end
 
 group :test do
