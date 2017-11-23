@@ -16,14 +16,17 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
-
-/node_modules
 /yarn-error.log
 
-.byebug_history
+# Ignore node modules
+/node_modules
 
+# Dev environment files
 .tags
 .tags1
+.byebug_history
 
+# Application files
 .env
+/sandi_meter/*
 /coverage/*

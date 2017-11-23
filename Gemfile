@@ -71,6 +71,11 @@ group :development, :test do
   gem 'reek',          require: false
   gem 'rubocop',       require: false
   gem 'rubocop-rspec', require: false
+  gem 'sandi_meter',   require: false
+
+  # Static Analysis GUIs
+  gem 'rubycritic',    require: false
+  gem 'rubrowser',     require: false
 end
 
 group :test do
