@@ -1,4 +1,6 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
+
 require 'English'
 
 class StaticCodeAnalyer
@@ -94,18 +96,17 @@ class StaticCodeAnalyer
 
   def heading(name, output)
     "\n" + \
-    "\033[32m#" * 80 + "\033[0m\n" + \
-    "\033[32m#####\033[35m#{name.upcase.center(70)}\033[32m#####\033[0m\n" + \
-    "\033[32m#" * 80 + "\n\033[0m" + \
-    "\n" + \
-    output
+    "\033[32m#" * 80 + "\033[0m\n"  \
+    "\033[32m#####\033[35m#{name.upcase.center(70)}\033[32m#####\033[0m\n"  \
+    "\033[32m#" * 80 + "\n\033[0m"  \
+    "\n" + output
   end
 end
 
 class PreCommitHook
   def self.install
     root = `git rev-parse --show-toplevel`.chomp
-    abort "Not in a git repository!" unless $CHILD_STATUS.success?
+    abort 'Not in a git repository!' unless $CHILD_STATUS.success?
 
     path = File.join(root, '.git', 'hooks', 'pre-commit')
     expected = File.absolute_path(__FILE__)
@@ -116,7 +117,7 @@ class PreCommitHook
       if link != expected
         puts "Path #{path} links to the wrong place. Overwrite it with: \n\n  ln -snfv #{expected} #{path}\n\n"
       else
-        puts "Pre-commit hook already installed"
+        puts 'Pre-commit hook already installed'
       end
     rescue
       puts "\nPath #{path} is not a symlink or does not exist. Create it with: \n\n  ln -snfv #{expected} #{path}\n\n"
