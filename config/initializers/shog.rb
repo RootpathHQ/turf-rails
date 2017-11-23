@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Shog.configure do
   if ::Rails.env.production?
     reset_config!
