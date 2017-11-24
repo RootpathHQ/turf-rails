@@ -30,3 +30,7 @@
 .env
 /sandi_meter/*
 /coverage/*
+
+# React.js
+/public/packs
+/public/packs-test
