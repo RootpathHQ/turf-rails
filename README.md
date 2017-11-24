@@ -17,6 +17,14 @@ The product backlog is [here](https://trello.com/b/uog3kqhl/turf-app-task-board)
 
 Aim to write [good, full tests](https://robots.thoughtbot.com/how-we-test-rails-applications).
 
+### Running the App
+
+In seperate tabs:
+```shell
+bundle exec puma -t 5:5 -p 3000
+bin/webpack-dev-server
+```
+
 ### Code Quality
 
 There are a number of code quality tools available in the repo. The following commands are available:
