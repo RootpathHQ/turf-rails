@@ -56,10 +56,11 @@ group :development, :test do
 
   # Testing
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'factory_girl_rails'
-  gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
-  gem 'rspec-rails'
   gem 'capybara'
+  gem 'factory_girl_rails'
+  gem 'faker'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
 
   # Dynamic Analysis
   gem 'bullet' # N+1 queries
